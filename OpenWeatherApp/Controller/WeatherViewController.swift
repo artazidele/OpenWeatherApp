@@ -82,7 +82,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
                 
                 
             }else{
-                self.cityLabel.text = "Weather unavailible !"
+                self.cityLabel.text = "Weather unavailible!"
             }
             
         }

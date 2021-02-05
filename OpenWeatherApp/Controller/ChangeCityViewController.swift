@@ -21,11 +21,10 @@ class ChangeCityViewController: UIViewController {
     
     var delegate: ChangeCityDelegate?
 
+    
     @IBOutlet weak var cityTextField: DesignableTextField!
     
-    
-    
-    @IBAction func getWeatherTapped(_ sender: Any) {
+    @IBAction func getWeatherTapped(_ sender: DesignButton) {
         guard let cityName = cityTextField.text else {
             return
         }

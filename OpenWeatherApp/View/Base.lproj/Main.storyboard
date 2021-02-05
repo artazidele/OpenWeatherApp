@@ -28,7 +28,7 @@
                                     <segue destination="PgG-U9-M9R" kind="show" identifier="city" id="KeH-Lt-dMr"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="we0-Lo-Foa">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="we0-Lo-Foa">
                                 <rect key="frame" x="58" y="194" width="299" height="368"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fog" translatesAutoresizingMaskIntoConstraints="NO" id="sZF-W3-7Gd">
@@ -39,9 +39,8 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWX-Zp-zLP">
-                                        <rect key="frame" x="0.0" y="170" width="299" height="65"/>
+                                        <rect key="frame" x="136" y="170" width="27" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="299" id="0dq-f1-gzL"/>
                                             <constraint firstAttribute="height" constant="65" id="SSG-oa-CHt"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -49,9 +48,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUz-0P-8wH">
-                                        <rect key="frame" x="0.0" y="303" width="299" height="65"/>
+                                        <rect key="frame" x="87" y="303" width="125" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="299" id="WSF-ZC-8Zq"/>
                                             <constraint firstAttribute="height" constant="65" id="aHV-Ek-4Td"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -70,7 +68,7 @@
                             <constraint firstItem="mrt-T8-z5l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NvZ-UU-lC8"/>
                             <constraint firstItem="mrt-T8-z5l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c06-TA-dgv"/>
                             <constraint firstItem="mrt-T8-z5l" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kGq-hZ-IPx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="we0-Lo-Foa" secondAttribute="bottom" constant="299" id="qOv-XY-D4C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="we0-Lo-Foa" secondAttribute="bottom" constant="300" id="qOv-XY-D4C"/>
                         </constraints>
                     </view>
                     <connections>
@@ -148,8 +146,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="funct:" destination="PgG-U9-M9R" eventType="touchUpInside" id="QiN-Sh-Iwq"/>
-                                            <action selector="getWeatherTapped:" destination="PgG-U9-M9R" eventType="touchUpInside" id="IN8-A0-2C2"/>
+                                            <action selector="getWeatherTapped:" destination="PgG-U9-M9R" eventType="touchUpInside" id="fKj-6s-kQY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -174,9 +171,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kfb-ij-tyw"/>
                     <connections>
-                        <outlet property="action" destination="Vn4-GD-Qzu" id="dZZ-UA-pbN"/>
-                        <outlet property="label" destination="Fjj-bQ-eu1" id="sCy-WU-Cn7"/>
-                        <outlet property="text" destination="Fjj-bQ-eu1" id="P2m-h9-KAl"/>
+                        <outlet property="cityTextField" destination="Fjj-bQ-eu1" id="GfB-P5-qbp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RjM-RG-Xa6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
