@@ -80,6 +80,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
                 weatherDataModel.weatherIconName = weatherDataModel.updateWeatherIcon(condition: weatherDataModel.condition)
                 updateUI()
                 
+                
             }else{
                 self.cityLabel.text = "Weather unavailible !"
             }
